@@ -1,32 +1,833 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta
+      name="description"
+      content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
+      <a href="https://t.me/s/FigmaToHTML" target="_blank">
+        <img src="img/logo.png" />
+      </a>
+      <div>
+        <p>
+          Данная верстка, была реализована пользователем в рамках обучающего
+          телеграм канал
+          <a href="https://t.me/s/FigmaToHTML" target="_blank"
+            >FIGMA | Макеты для верстки</a
+          >
+        </p>
+        <p>
+          При помощи
+          <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank"
+            >Telegram-бота</a
+          >
+          пользователь получил оплату за верстку этого макета.
+        </p>
+      </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
-    </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__tel">
+              <p>Call - 123 456 789</p>
+            </div>
+            <img
+              src="./img/header-logo.png"
+              alt="logo header"
+              width="160"
+              loading="lazy"
+            />
 
-</body>
+            <button class="btn" type="button">Reservation</button>
+          </div>
+
+          <div class="header__navigation">
+            <ul class="nav">
+              <li class="nav__item">Home</li>
+              <li class="nav__item">About Us</li>
+              <li class="nav__item">Our Menu</li>
+              <li class="nav__item">Pages</li>
+              <li class="nav__item">Blog</li>
+              <li class="nav__item">Contact Us</li>
+            </ul>
+
+            <ul class="header__icons">
+              <li>
+                <svg width="24" height="24">
+                  <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </li>
+
+              <li>
+                <svg width="24" height="24">
+                  <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="24" height="24">
+                  <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li>
+                <svg width="24" height="24">
+                  <use href="./img/svg/symbol-defs.svg#icon-pinterst"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__left">
+            <h1>Welcome to<br />Restaurant</h1>
+            <p>
+              The people, food and the prime locations make the perfect place
+              good friends & family to come together and have great time.
+            </p>
+            <button>View Menu</button>
+          </div>
+          <div class="hero__right"></div>
+        </section>
+
+        <section class="info">
+          <div class="container container_pink">
+            <h2 class="visually-hidden">Info about us</h2>
+            <ul class="info__list">
+              <li class="info__item">
+                <img
+                  class="info__item_img"
+                  src="./img/svg/location.svg"
+                  alt="location"
+                  width="52"
+                  height="52"
+                  loading="lazy"
+                />
+                <h3 class="info__item_title">Locate Us</h3>
+                <p class="info__item_text">
+                  Riverside 25, San Diego, California
+                </p>
+              </li>
+
+              <li class="info__item">
+                <img
+                  class="info__item_img"
+                  src="./img/svg/open.svg"
+                  alt="open hours"
+                  width="52"
+                  height="52"
+                  loading="lazy"
+                />
+                <h3 class="info__item_title">Open Hours</h3>
+                <p class="info__item_text">Mon To Fri 9:00 AM - 9:00 PM</p>
+              </li>
+
+              <li class="info__item">
+                <img
+                  class="info__item_img"
+                  src="./img/svg/reserv.svg"
+                  alt="reservation"
+                  width="52"
+                  height="52"
+                  loading="lazy"
+                />
+                <h3 class="info__item_title">Reservation</h3>
+                <p class="info__item_text">restaurantate@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="story">
+          <div class="container container_pink">
+            <img src="./img/table.jpg" alt="table" width="743" loading="lazy" />
+            <div>
+              <h2>The Delicious Story</h2>
+              <p>
+                The people, food and the prime locations make the perfect place
+                for the friends & family to come together and have great time.
+              </p>
+
+              <ul>
+                <li>
+                  <h3>2018</h3>
+                  <p>Plan for this restaurant to deliver healthy food.</p>
+                </li>
+
+                <li>
+                  <h3>2022</h3>
+                  <p>Happily in the fourth year by fulfill the motto.</p>
+                </li>
+              </ul>
+
+              <p>JOSEFINE</p>
+              <img
+                src="./img/signe.png"
+                alt="signe"
+                width="200"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="menu">
+          <div class="container container_white">
+            <div><p>Menu</p></div>
+            <div class="menu__left">
+              <h2>Try Our Special dishes</h2>
+              <p>
+                Every time you perfectly dine with us, it should happy for great
+                inspired food in an environment designed with individual touches
+                unique to the local area.
+              </p>
+              <img src="./img/menu/menu.jpg" alt="menu" width="398" />
+            </div>
+
+            <div class="menu__right">
+              <div>
+                <h3>Starters</h3>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./img/menu/menu1-raw.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Raw Scallops from Erquy</h4>
+                    <p>Shuck the scallop to that used for oysters</p>
+                    <p>$40</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu2-roll.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Spring Roll</h4>
+                    <p>Add oil to a hot pan spring onion whites</p>
+                    <p>$20</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu3-soup.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>French Onion Soup</h4>
+                    <p>Wheat flour, apple cider vinegar, bread</p>
+                    <p>$25</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu4-tomato.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Tomato Bruschetta</h4>
+                    <p>Bread, olive oil, garlic, black pepper</p>
+                    <p>$30</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Main Dish</h3>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./img/menu/menu5-grilled.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Grilled Salmon with Dill Sauce</h4>
+                    <p>Brown sugar, salmon fillet, Dijon mustard</p>
+                    <p>$40</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu6-beaf.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Roast Beef with Vegetable</h4>
+                    <p>Green beans, rib eye, olive oil, beef</p>
+                    <p>$20</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu7-potato.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Marrkesh Vegetetarian Curruy</h4>
+                    <p>Sweet potato, eggplant, garbanzo bean</p>
+                    <p>$25</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu8-vegan.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Spicy Vegan Potato Curry</h4>
+                    <p>Coconut milk, beans, potatoes, curry powder</p>
+                    <p>$35</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3>Dessert</h3>
+
+                <ul>
+                  <li>
+                    <img
+                      src="./img/menu/menu9-apple.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Apple Pie with Cream</h4>
+                    <p>Whipping cream, egg white, cinnamon</p>
+                    <p>$15</p>
+                  </li>
+
+                  <li>
+                    <img
+                      src="./img/menu/menu10-lemon.jpg"
+                      alt="menu"
+                      width="84"
+                      height="84"
+                      loading="lazy"
+                    />
+                    <h4>Lemon Meringue Pie</h4>
+                    <p>Frozen pie crust, meringue, lemon</p>
+                    <p>$30</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonial">
+          <div class="container">
+            <p>Testimonial</p>
+            <h2>Our Clients Say</h2>
+            <p>
+              We love to hear from customers, so please leave a comment or say
+              hello in an email.
+            </p>
+
+            <ul>
+              <li>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-quotes"></use>
+                  </svg>
+                  <img
+                    src="./img/clients/natasha.jpg"
+                    alt="client photo"
+                    width="113"
+                    height="113"
+                    loading="lazy"
+                  />
+                  <h3>Natasha D</h3>
+                  <p>Newyork</p>
+                </div>
+                <p>
+                  They known for its fabulous taste and food. Anywhere you go
+                  your hunger is satisfied. The best chicken & burgers those are
+                  yummy.
+                </p>
+              </li>
+
+              <li>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-quotes"></use>
+                  </svg>
+                  <img
+                    src="./img/clients/jack.jpg"
+                    alt="client photo"
+                    width="113"
+                    height="113"
+                    loading="lazy"
+                  />
+                  <h3>Jack Sparrow</h3>
+                  <p>Salt Lake City</p>
+                </div>
+                <p>
+                  I have visited this fantastic restaurant on several occasions,
+                  food is absolutely outstanding & attention to detail is in
+                  league of its own.
+                </p>
+              </li>
+
+              <li>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-quotes"></use>
+                  </svg>
+                  <img
+                    src="./img/clients/martin.jpg"
+                    alt="client photo"
+                    width="113"
+                    height="113"
+                    loading="lazy"
+                  />
+                  <h3>Martin</h3>
+                  <p>San Diego</p>
+                </div>
+                <p>
+                  Perfectly known for its fabulous taste and food. Anywhere your
+                  hunger is satisfied. They give best fried chicken and burgers
+                  those are yummy.
+                </p>
+              </li>
+            </ul>
+
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+
+        <section class="section-img"></section>
+
+        <section class="offers">
+          <div class="container container_white">
+            <p>offers</p>
+            <h2>Our Offer dishes</h2>
+            <p>
+              Our chefs create melt-in-your-mouth dishes that'll satiate even
+              the fussiest eaters now<br />the dishes are in offers use it based
+              on hunger.
+            </p>
+
+            <ul>
+              <li>
+                <div>
+                  <div>
+                    <p>only</p>
+                    <p>$10</p>
+                    <svg width="24" height="24">
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-cloud-white1"
+                      ></use>
+                    </svg>
+                  </div>
+
+                  <p>50% Offer Going</p>
+                  <h3>Chicken Burger</h3>
+                  <p>Chicken burger with the tasty toppings and leaves.</p>
+                </div>
+                <img
+                  src="./img/offers/burger.png"
+                  alt="burger"
+                  width="307"
+                  loading="lazy"
+                />
+              </li>
+
+              <li>
+                <div>
+                  <div>
+                    <p>only</p>
+                    <p>$9</p>
+                    <svg width="24" height="24">
+                      <use
+                        href="./img/svg/symbol-defs.svg#icon-cloud-gray1"
+                      ></use>
+                    </svg>
+                  </div>
+
+                  <p>50% Offer Going</p>
+                  <h3>Chicken Pizza</h3>
+                  <p>Pizza with multiple flavor and the toping are mixed.</p>
+                </div>
+                <img
+                  src="./img/offers/pizza.png"
+                  alt="pizza"
+                  width="325"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="popular">
+          <div class="container container_white">
+            <p>menu</p>
+            <h2>Popular Dishes</h2>
+            <p>
+              There is a game between the waiters in restaurant to see who
+              serves the food to<br />each table fastest. That led to attempting
+              the Guinness Record.
+            </p>
+
+            <ul>
+              <li>
+                <img
+                  src="./img/Chicken.jpg"
+                  alt="Chicken Manjoori"
+                  width="318"
+                  loading="lazy"
+                />
+
+                <div>
+                  <div>
+                    <h3>Chicken Manjoori</h3>
+                    <p>$15</p>
+                  </div>
+                  <p>
+                    Dish relished by all age groups as a starter dish at
+                    parties.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="./img/hotdog.jpg"
+                  alt="HotDog"
+                  width="318"
+                  loading="lazy"
+                />
+
+                <div>
+                  <div>
+                    <h3>Hotdog</h3>
+                    <p>$10</p>
+                  </div>
+                  <p>
+                    Grilled sausage served in the slit of a partially sliced
+                    bun.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="./img/salmon.jpg"
+                  alt="Fresh Salmon"
+                  width="318"
+                  loading="lazy"
+                />
+
+                <div>
+                  <div>
+                    <h3>Fresh Salmon</h3>
+                    <p>$5</p>
+                  </div>
+                  <p>
+                    Beat the health blues with our Super Immune Blue Juice
+                    Recipe.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="./img/burger.jpg"
+                  alt="Fresh Salmon"
+                  width="318"
+                  loading="lazy"
+                />
+
+                <div>
+                  <div>
+                    <h3>Veg Burger</h3>
+                    <p>$10</p>
+                  </div>
+                  <p>Burgers may be made from ingredients like beans.</p>
+                </div>
+              </li>
+            </ul>
+
+            <button type="button">See all dishes</button>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="container">
+            <div>
+              <p>What we offer</p>
+              <h2>Our Great Services</h2>
+              <p>
+                The atmosphere set the stage. It’s about more than just a dining
+                room away from your home. food takes the spotlight as guests.
+              </p>
+            </div>
+
+            <ul>
+              <li>
+                <img
+                  src="./img/svg/open.svg"
+                  alt="opened"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                />
+                <p>Opened 24/7</p>
+              </li>
+
+              <li>
+                <img
+                  src="./img/svg/menus.svg"
+                  alt="menu"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                />
+                <p>Special Menus</p>
+              </li>
+
+              <li>
+                <img
+                  src="./img/svg/delivery.svg"
+                  alt="delivery"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                />
+                <p>Home Delivery</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="blog">
+          <div class="container container_white">
+            <p>Blog</p>
+            <h2>Be First Who Read News</h2>
+            <p>
+              Explore the latest stories about our dishes, offers,<br />events
+              and future plans here.
+            </p>
+
+            <ul>
+              <li>
+                <div>
+                  <img
+                    src="img/blog1.jpg"
+                    alt="Blog"
+                    width="640"
+                    loading="lazy"
+                  />
+                  <button type="button">View More</button>
+                </div>
+
+                <div>
+                  <div>
+                    <p>Delicious</p>
+                    <p>March 19, 2022</p>
+                  </div>
+                  <h3>The Legend of US Cuisine: The Story of Hungry People</h3>
+                  <p>
+                    Capitalize on low-hanging fruit to identify a ballpark value
+                    added matrix economically and the creative activity to beta
+                    test override the food quality.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <img
+                    src="img/blog2.jpg"
+                    alt="Blog"
+                    width="640"
+                    loading="lazy"
+                  />
+                  <button type="button">View More</button>
+                </div>
+
+                <div>
+                  <div>
+                    <p>Cooking</p>
+                    <p>March 19, 2022</p>
+                  </div>
+                  <h3>
+                    The Most Popular Delicious Food of Mediterranean Cuisine
+                  </h3>
+                  <p>
+                    Strategies on low-hanging fruit to identify a ballpark value
+                    added matrix economically and the creative activity to beta
+                    test override the food quality.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="reservation">
+          <div>
+            <p>reservation</p>
+            <h2>Book Your Table</h2>
+
+            <form>
+              <label>
+                <input type="email" name="email" placeholder="Email" />
+              </label>
+
+              <label>
+                <input type="text" name="persons" placeholder="Persons" />
+              </label>
+
+              <label>
+                <input type="text" name="timing" placeholder="Timing" />
+              </label>
+
+              <label>
+                <input type="text" name="date" placeholder="Date" />
+              </label>
+              <button type="submit">Book A Table</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div>
+            <div>
+              <p>#TheTastEat</p>
+              <img
+                src="./img/header-logo.png"
+                alt="logo header"
+                width="160"
+                loading="lazy"
+              />
+              <ul class="header__icons">
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="24" height="24">
+                    <use href="./img/svg/symbol-defs.svg#icon-pinterst"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <p>Contact</p>
+                <address>5 Rue Dalou, 75015 Paris</address>
+                <address>
+                  <a href="tel:+123456789">+123 456 789</a>
+                  <a href="mailto:josefin@mail.com">josefin@mail.com</a>
+                </address>
+              </div>
+
+              <div>
+                <p>
+                  Join our mailing list for updates,<br />Get news & offers
+                  events.
+                </p>
+                <form>
+                  <label>
+                    <input type="email" name="email" placeholder="Email" />
+                  </label>
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+
+              <div>
+                <p>Working Hours</p>
+                <ul>
+                    <li>
+                        <p>Mon – Fri:</p>
+                        <p>7.00am – 6.00pm</p>
+                    </li>
+
+                     <li>
+                        <p>Sat:</p>
+                        <p>7.00am – 6.00pm</p>
+                    </li>
+
+                     <li>
+                        <p>Sun:</p>
+                        <p>8.00am – 6.00pm</p>
+                    </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <p>© Copyright - TastEat | Designed by <span>VictorFlow</span>- Powered by <span>Webflow</span></p>
+
+            <ul>
+                <li>
+                    <p>Styleguide</p>
+                </li>
+
+                <li><p>Licenses</p></li>
+
+                <li><p>Protected</p></li>
+
+                <li><p>Not Found</p></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
