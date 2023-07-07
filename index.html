@@ -8,9 +8,10 @@
       content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Josefin+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/base.css" />
   </head>
   <body>
@@ -283,7 +284,7 @@
                           <h4 class="subtitle">Raw Scallops from Erquy</h4>
                           <p>Shuck the scallop to that used for oysters</p>
                         </div>
-                        <!-- <div class="menu__line"></div> -->
+                        <div class="menu__line"></div>
                         <p class="price">$40</p>
                       </div>
                     </li>
@@ -301,7 +302,7 @@
                           <h4 class="subtitle">Spring Roll</h4>
                           <p>Add oil to a hot pan spring onion whites</p>
                         </div>
-                        <!-- <div class="menu__line"></div> -->
+                        <div class="menu__line"></div>
                         <p class="price">$20</p>
                       </div>
                     </li>
@@ -319,7 +320,7 @@
                           <h4 class="subtitle">French Onion Soup</h4>
                           <p>Wheat flour, apple cider vinegar, bread</p>
                         </div>
-                        <!-- <div class="menu__line"></div> -->
+                        <div class="menu__line"></div>
                         <p class="price">$25</p>
                       </div>
                     </li>
@@ -337,7 +338,7 @@
                           <h4 class="subtitle">Tomato Bruschetta</h4>
                           <p>Bread, olive oil, garlic, black pepper</p>
                         </div>
-                        <!-- <div class="menu__line"></div> -->
+                        <div class="menu__line"></div>
                         <p class="price">$30</p>
                       </div>
                     </li>
@@ -363,7 +364,7 @@
                           </h4>
                           <p>Brown sugar, salmon fillet, Dijon mustard</p>
                         </div>
-
+                        <div class="menu__line"></div>
                         <p class="price">$40</p>
                       </div>
                     </li>
@@ -381,7 +382,7 @@
                           <h4 class="subtitle">Roast Beef with Vegetable</h4>
                           <p>Green beans, rib eye, olive oil, beef</p>
                         </div>
-
+                        <div class="menu__line"></div>
                         <p class="price">$20</p>
                       </div>
                     </li>
@@ -399,7 +400,7 @@
                           <h4 class="subtitle">Marrkesh Vegetetarian Curruy</h4>
                           <p>Sweet potato, eggplant, garbanzo bean</p>
                         </div>
-
+                        <div class="menu__line"></div>
                         <p class="price">$25</p>
                       </div>
                     </li>
@@ -417,7 +418,7 @@
                           <h4 class="subtitle">Spicy Vegan Potato Curry</h4>
                           <p>Coconut milk, beans, potatoes, curry powder</p>
                         </div>
-
+                        <div class="menu__line"></div>
                         <p class="price">$35</p>
                       </div>
                     </li>
@@ -441,7 +442,7 @@
                           <h4 class="subtitle">Apple Pie with Cream</h4>
                           <p>Whipping cream, egg white, cinnamon</p>
                         </div>
-
+                        <div class="menu__line"></div>
                         <p class="price">$15</p>
                       </div>
                     </li>
@@ -459,7 +460,7 @@
                           <h4 class="subtitle">Lemon Meringue Pie</h4>
                           <p>Frozen pie crust, meringue, lemon</p>
                         </div>
-
+                        <div class="menu__line"></div>
                         <p class="price">$30</p>
                       </div>
                     </li>
@@ -502,12 +503,11 @@
                     loading="lazy"
                   />
                   <div>
-                     <h3>Natasha D</h3>
-                  <p>Newyork</p>
+                    <h3 class="subtitle">Natasha D</h3>
+                    <p class="review__user-city">Newyork</p>
                   </div>
-                 
                 </div>
-                <p>
+                <p class="review__text">
                   They known for its fabulous taste and food. Anywhere you go
                   your hunger is satisfied. The best chicken & burgers those are
                   yummy.
@@ -531,12 +531,11 @@
                     loading="lazy"
                   />
                   <div>
-                      <h3>Jack Sparrow</h3>
-                  <p>Salt Lake City</p>
+                    <h3 class="subtitle">Jack Sparrow</h3>
+                    <p class="review__user-city">Salt Lake City</p>
                   </div>
-                
                 </div>
-                <p>
+                <p class="review__text">
                   I have visited this fantastic restaurant on several occasions,
                   food is absolutely outstanding & attention to detail is in
                   league of its own.
@@ -559,11 +558,12 @@
                     height="113"
                     loading="lazy"
                   />
-                  <div> <h3>Martin</h3>
-                  <p>San Diego</p></div>
-                 
+                  <div>
+                    <h3 class="subtitle">Martin</h3>
+                    <p class="review__user-city">San Diego</p>
+                  </div>
                 </div>
-                <p>
+                <p class="review__text">
                   Perfectly known for its fabulous taste and food. Anywhere your
                   hunger is satisfied. They give best fried chicken and burgers
                   those are yummy.
@@ -571,68 +571,90 @@
               </li>
             </ul>
 
-            <div></div>
-            <div></div>
+            <div class="dots-box">
+              <div class="dots dots__1"></div>
+              <div class="dots dots__2"></div>
+            </div>
           </div>
         </section>
 
-        <section class="section-img"></section>
+        <section class="section-img">
+          <img src="./img/lamp-bg.jpg" alt="lamp" />
+        </section>
 
         <section class="offers">
           <div class="container container_white">
-            <p>offers</p>
-            <h2>Our Offer dishes</h2>
+            <div class="section-name">
+              <p class="section-name__text">offers</p>
+            </div>
+
+            <h2 class="second-title second-title_margin">Our Offer dishes</h2>
             <p>
               Our chefs create melt-in-your-mouth dishes that'll satiate even
               the fussiest eaters now<br />the dishes are in offers use it based
               on hunger.
             </p>
 
-            <ul>
-              <li>
+            <ul class="offers__list">
+              <li class="offers__item offers__item_blue">
                 <div>
-                  <div>
-                    <p>only</p>
-                    <p>$10</p>
-                    <svg width="24" height="24">
+                  <div class="cloud-box">
+                    <div class="cloud-box__price">
+                      <p class="cloud-box__text">only</p>
+                      <p class="cloud-box__num">$10</p>
+                    </div>
+
+                    <svg width="167" height="104">
                       <use
                         href="./img/svg/symbol-defs.svg#icon-cloud-white1"
                       ></use>
                     </svg>
                   </div>
+                  <div class="offer">
+                    <p>50% Offer Going</p>
+                  </div>
 
-                  <p>50% Offer Going</p>
-                  <h3>Chicken Burger</h3>
+                  <h3 class="second-title">Chicken Burger</h3>
                   <p>Chicken burger with the tasty toppings and leaves.</p>
                 </div>
+
                 <img
+                  class="offers__img"
                   src="./img/offers/burger.png"
                   alt="burger"
                   width="307"
+                  height="232"
                   loading="lazy"
                 />
               </li>
 
-              <li>
+              <li class="offers__item offers__item_gray">
                 <div>
-                  <div>
-                    <p>only</p>
-                    <p>$9</p>
-                    <svg width="24" height="24">
+                  <div class="cloud-box">
+                    <div class="cloud-box__price cloud-box__price_white">
+                      <p class="cloud-box__text cloud-box__text_white">only</p>
+                      <p class="cloud-box__num cloud-box__text_white">$9</p>
+                    </div>
+
+                    <svg width="167" height="104">
                       <use
                         href="./img/svg/symbol-defs.svg#icon-cloud-gray1"
                       ></use>
                     </svg>
                   </div>
+                  <div class="offer">
+                    <p>50% Offer Going</p>
+                  </div>
 
-                  <p>50% Offer Going</p>
-                  <h3>Chicken Pizza</h3>
+                  <h3 class="second-title">Chicken Pizza</h3>
                   <p>Pizza with multiple flavor and the toping are mixed.</p>
                 </div>
                 <img
+                  class="offers__img"
                   src="./img/offers/pizza.png"
                   alt="pizza"
-                  width="325"
+                  width="307"
+                  height="232"
                   loading="lazy"
                 />
               </li>
@@ -642,16 +664,19 @@
 
         <section class="popular">
           <div class="container container_white">
-            <p>menu</p>
-            <h2>Popular Dishes</h2>
+            <div class="section-name">
+              <p class="section-name__text">menu</p>
+            </div>
+
+            <h2 class="second-title second-title_margin">Popular Dishes</h2>
             <p>
               There is a game between the waiters in restaurant to see who
               serves the food to<br />each table fastest. That led to attempting
               the Guinness Record.
             </p>
 
-            <ul>
-              <li>
+            <ul class="popular__list">
+              <li class="popular__item">
                 <img
                   src="./img/Chicken.jpg"
                   alt="Chicken Manjoori"
@@ -660,18 +685,19 @@
                 />
 
                 <div>
-                  <div>
+                  <div class="popular__text-box">
                     <h3>Chicken Manjoori</h3>
                     <p>$15</p>
                   </div>
-                  <p>
+
+                  <p class="popular__descr">
                     Dish relished by all age groups as a starter dish at
                     parties.
                   </p>
                 </div>
               </li>
 
-              <li>
+              <li class="popular__item">
                 <img
                   src="./img/hotdog.jpg"
                   alt="HotDog"
@@ -680,18 +706,18 @@
                 />
 
                 <div>
-                  <div>
+                  <div class="popular__text-box">
                     <h3>Hotdog</h3>
                     <p>$10</p>
                   </div>
-                  <p>
+                  <p class="popular__descr">
                     Grilled sausage served in the slit of a partially sliced
                     bun.
                   </p>
                 </div>
               </li>
 
-              <li>
+              <li class="popular__item">
                 <img
                   src="./img/salmon.jpg"
                   alt="Fresh Salmon"
@@ -700,52 +726,60 @@
                 />
 
                 <div>
-                  <div>
+                  <div class="popular__text-box">
                     <h3>Fresh Salmon</h3>
                     <p>$5</p>
                   </div>
-                  <p>
+                  <p class="popular__descr">
                     Beat the health blues with our Super Immune Blue Juice
                     Recipe.
                   </p>
                 </div>
               </li>
 
-              <li>
+              <li class="popular__item">
                 <img
                   src="./img/burger.jpg"
                   alt="Fresh Salmon"
                   width="318"
+                  height="307"
                   loading="lazy"
                 />
 
                 <div>
-                  <div>
+                  <div class="popular__text-box">
                     <h3>Veg Burger</h3>
                     <p>$10</p>
                   </div>
-                  <p>Burgers may be made from ingredients like beans.</p>
+                  <p class="popular__descr">
+                    Burgers may be made from ingredients like beans.
+                  </p>
                 </div>
               </li>
             </ul>
 
-            <button type="button">See all dishes</button>
+            <button class="btn" type="button">See all dishes</button>
           </div>
         </section>
 
         <section class="services">
-          <div class="container">
+          <div class="container container__services">
             <div>
-              <p>What we offer</p>
-              <h2>Our Great Services</h2>
+              <div class="section-name">
+                <p class="section-name__text">What we offer</p>
+              </div>
+
+              <h2 class="second-title second-title_white-margin">
+                Our Great Services
+              </h2>
               <p>
                 The atmosphere set the stage. It’s about more than just a dining
                 room away from your home. food takes the spotlight as guests.
               </p>
             </div>
 
-            <ul>
-              <li>
+            <ul class="services__list">
+              <li class="services__item">
                 <img
                   src="./img/svg/open.svg"
                   alt="opened"
@@ -753,10 +787,10 @@
                   height="60"
                   loading="lazy"
                 />
-                <p>Opened 24/7</p>
+                <p class="services__txt">Opened 24/7</p>
               </li>
 
-              <li>
+              <li class="services__item">
                 <img
                   src="./img/svg/menus.svg"
                   alt="menu"
@@ -764,10 +798,10 @@
                   height="60"
                   loading="lazy"
                 />
-                <p>Special Menus</p>
+                <p class="services__txt">Special Menus</p>
               </li>
 
-              <li>
+              <li class="services__item">
                 <img
                   src="./img/svg/delivery.svg"
                   alt="delivery"
@@ -775,7 +809,7 @@
                   height="60"
                   loading="lazy"
                 />
-                <p>Home Delivery</p>
+                <p class="services__txt">Home Delivery</p>
               </li>
             </ul>
           </div>
@@ -783,31 +817,43 @@
 
         <section class="blog">
           <div class="container container_white">
-            <p>Blog</p>
-            <h2>Be First Who Read News</h2>
+            <div class="section-name">
+              <p class="section-name__text">Blog</p>
+            </div>
+
+            <h2 class="second-title second-title_margin">
+              Be First Who Read News
+            </h2>
             <p>
               Explore the latest stories about our dishes, offers,<br />events
               and future plans here.
             </p>
 
-            <ul>
-              <li>
-                <div>
+            <ul class="blog__list">
+              <li class="blog__item">
+                <div class="blog__img-container">
                   <img
                     src="img/blog1.jpg"
                     alt="Blog"
                     width="640"
                     loading="lazy"
                   />
-                  <button type="button">View More</button>
+                  <div class="backdrop"></div>
+                  <button class="blog__btn" type="button">View More</button>
                 </div>
 
-                <div>
-                  <div>
-                    <p>Delicious</p>
-                    <p>March 19, 2022</p>
+                <div class="blog__bottom-part">
+                  <div class="blog__date">
+                    <div class="section-name">
+                      <p class="section-name__text">Delicious</p>
+                    </div>
+                    <div class="section-name">
+                      <p class="section-name__text">March 19, 2022</p>
+                    </div>
                   </div>
-                  <h3>The Legend of US Cuisine: The Story of Hungry People</h3>
+                  <h3 class="subtitle subtitle_margin">
+                    The Legend of US Cuisine: The Story of Hungry People
+                  </h3>
                   <p>
                     Capitalize on low-hanging fruit to identify a ballpark value
                     added matrix economically and the creative activity to beta
@@ -816,23 +862,29 @@
                 </div>
               </li>
 
-              <li>
-                <div>
+              <li class="blog__item">
+                <div class="blog__img-container">
                   <img
                     src="img/blog2.jpg"
                     alt="Blog"
                     width="640"
                     loading="lazy"
                   />
-                  <button type="button">View More</button>
+                  <div class="backdrop"></div>
+                  <button class="blog__btn" type="button">View More</button>
                 </div>
 
-                <div>
-                  <div>
-                    <p>Cooking</p>
-                    <p>March 19, 2022</p>
+                <div class="blog__bottom-part">
+                  <div class="blog__date">
+                    <div class="section-name">
+                      <p class="section-name__text">Cooking</p>
+                    </div>
+
+                    <div class="section-name">
+                      <p class="section-name__text">March 19, 2022</p>
+                    </div>
                   </div>
-                  <h3>
+                  <h3 class="subtitle subtitle_margin">
                     The Most Popular Delicious Food of Mediterranean Cuisine
                   </h3>
                   <p>
@@ -847,105 +899,163 @@
         </section>
 
         <section class="reservation">
-          <div>
-            <p>reservation</p>
-            <h2>Book Your Table</h2>
+          <div class="form-box">
+            <div class="section-name">
+              <p class="section-name__text">reservation</p>
+            </div>
+
+            <h2 class="second-title second-title_big-margin">
+              Book Your Table
+            </h2>
 
             <form>
-              <label>
-                <input type="email" name="email" placeholder="Email" />
-              </label>
+              <div class="form__group_1">
+                <label>
+                  <input
+                    class="form__input form__input_1"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                </label>
+                <label>
+                  <input
+                    class="form__input form__input_1"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </label>
+              </div>
 
-              <label>
-                <input type="text" name="persons" placeholder="Persons" />
-              </label>
+              <div class="form__group_2">
+                <label>
+                  <input
+                    class="form__input form__input_2"
+                    type="text"
+                    name="persons"
+                    placeholder="Persons"
+                    required
+                  />
+                </label>
+                <label>
+                  <input
+                    class="form__input form__input_2"
+                    type="text"
+                    name="timing"
+                    placeholder="Timing"
+                    required
+                  />
+                </label>
 
-              <label>
-                <input type="text" name="timing" placeholder="Timing" />
-              </label>
+                <label>
+                  <input
+                    class="form__input form__input_2"
+                    type="text"
+                    name="date"
+                    placeholder="Date"
+                    required
+                  />
+                </label>
+              </div>
 
-              <label>
-                <input type="text" name="date" placeholder="Date" />
-              </label>
-              <button type="submit">Book A Table</button>
+              <button class="form__btn" type="submit">Book A Table</button>
             </form>
           </div>
         </section>
       </main>
 
-      <footer>
-        <div class="container">
-          <div>
-            <div>
-              <p>#TheTastEat</p>
+      <footer class="footer">
+       
+          <div class="footer__top">
+            <div class="footer__logo-wrap">
+              <p class="footer__logo-wrap_text">#TheTastEat</p>
               <img
                 src="./img/header-logo.png"
                 alt="logo header"
-                width="160"
+                width="378"
+                height="188"
                 loading="lazy"
               />
-              <ul class="header__icons">
-                <li>
+              <ul class="header__icons header__icons_position">
+                <li class="icons__item icons__item_1">
                   <svg width="24" height="24">
                     <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </li>
 
-                <li>
+                <li class="icons__item icons__item_2">
                   <svg width="24" height="24">
                     <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </li>
-                <li>
+                <li class="icons__item icons__item_3">
                   <svg width="24" height="24">
                     <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </li>
-                <li>
+                <li class="icons__item icons__item_4">
                   <svg width="24" height="24">
                     <use href="./img/svg/symbol-defs.svg#icon-pinterst"></use>
                   </svg>
                 </li>
               </ul>
             </div>
-            <div>
-              <div>
-                <p>Contact</p>
-                <address>5 Rue Dalou, 75015 Paris</address>
-                <address>
-                  <a href="tel:+123456789">+123 456 789</a>
-                  <a href="mailto:josefin@mail.com">josefin@mail.com</a>
-                </address>
+
+            <div class="footer__about">
+              <div class="contact-wrap">
+                <div class="section-name">
+                  <p class="section-name__text">Contact</p>
+                </div>
+                <div class="address-wrap">
+                  <address>5 Rue Dalou, 75015 Paris</address>
+                  <address class="contacts">
+                    <a href="tel:+123456789">+123 456 789</a>
+                    <a href="mailto:josefin@mail.com">josefin@mail.com</a>
+                  </address>
+                </div>
               </div>
 
-              <div>
+              <div class="form-wrap">
                 <p>
                   Join our mailing list for updates,<br />Get news & offers
                   events.
                 </p>
-                <form>
+                <form class="form-footer">
                   <label>
-                    <input type="email" name="email" placeholder="Email" />
+                    <input
+                      class="form-footer__input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                    />
                   </label>
-                  <button type="submit">Subscribe</button>
+                  <button class="form-footer__btn" type="submit">
+                    Subscribe
+                  </button>
                 </form>
               </div>
 
-              <div>
-                <p>Working Hours</p>
-                <ul>
-                  <li>
-                    <p>Mon – Fri:</p>
+              <div class="hours">
+                <div class="section-name">
+                  <p class="section-name__text">Working Hours</p>
+                </div>
+
+                <ul class="hours__list">
+                  <li class="hours__item">
+                    <p class="hours__days">Mon – Fri:</p>
                     <p>7.00am – 6.00pm</p>
                   </li>
 
-                  <li>
-                    <p>Sat:</p>
+                  <li class="hours__item">
+                    <p class="hours__days">Sat:</p>
                     <p>7.00am – 6.00pm</p>
                   </li>
 
-                  <li>
-                    <p>Sun:</p>
+                  <li class="hours__item">
+                    <p class="hours__days">Sun:</p>
                     <p>8.00am – 6.00pm</p>
                   </li>
                 </ul>
@@ -953,13 +1063,13 @@
             </div>
           </div>
 
-          <div>
-            <p>
+          <div class="footer__bottom">
+            <p class="copyright">
               © Copyright - TastEat | Designed by <span>VictorFlow</span>-
               Powered by <span>Webflow</span>
             </p>
 
-            <ul>
+            <ul class="footer-nav">
               <li>
                 <p>Styleguide</p>
               </li>
@@ -971,7 +1081,7 @@
               <li><p>Not Found</p></li>
             </ul>
           </div>
-        </div>
+     
       </footer>
     </div>
   </body>

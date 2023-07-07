@@ -25,13 +25,25 @@
   font-size: 40px;
   line-height: 1.4;
   margin-bottom: 15px;
+  color: #292e36;
 }
 .second-title_margin-bottom {
   margin-bottom: 13px;
 }
+.second-title_margin {
+  margin-bottom: 8px;
+}
 .second-title_white {
   color: #ffffff;
   margin-bottom: 8px;
+}
+.second-title_white-margin {
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+.second-title_big-margin{
+    color: #fff;
+    margin-bottom: 38px;
 }
 
 /* имя секции с линиями */
@@ -40,6 +52,7 @@
   border-top: 1px solid #e1b168;
   border-bottom: 1px solid #e1b168;
   margin-bottom: 12px;
+  padding: 4px 0;
 }
 .section-name__text {
   text-transform: uppercase;
@@ -55,12 +68,16 @@
   margin-bottom: 40px;
 }
 
-/* h4 */
+/* h4 and h3 */
 .subtitle {
   font-family: Cormorant Infant, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.4;
+}
+.subtitle_margin {
+  margin-bottom: 24px;
+  color: #292e36;
 }
 .price {
   font-family: Cormorant Infant, sans-serif;
